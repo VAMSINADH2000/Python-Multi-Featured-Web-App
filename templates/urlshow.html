@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Password</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="shortcut icon" type="image/png"  href="{{ url_for('static',filename='fevicon.png')}}" >
+
+</head>
+<body class="passbody">
+    <h1 class = 'strongpass'>Shortened Url:</h1>
+<div class = 'passh1'><center><h1 >{{url}}</h1></center></div>
+<form action="/" method="GET">
+    <input type="submit" value="Go Back" style=" background-color: Green;
+border: none;
+color: white;
+padding: 13px 30px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;">
+
+</form>
+</body>
+</html>

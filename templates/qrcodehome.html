@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QrCode</title>
+<link rel="stylesheet" href="/static/css/style.css">
+    <link rel="shortcut icon" type="image/png"  href="{{ url_for('static',filename='fevicon.png')}}" >
+
+</head>
+<body class="qrbody">
+<center><div class="login">
+    <form class = 'form' action="/download" method="POST" style="padding-top: 200px;">
+    	<input  type="text" name="link" class = 'qrinput' placeholder="Paste the Link here" required="required" />
+                <button type="submit"  class="button"><span>Generate </span></button>
+
+
+    </form>
+ </div>
+</center>
+
+  <form action="/" method="GET" style="padding-top: 180px;">
+                  <input type="submit" value="Home" style=" background-color: Green;
+  border: none;
+  color: white;
+  padding: 13px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+  ">
+
+   </form>
+</body>
+</html>
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Translator</title>
+<link rel="stylesheet" href="/static/css/style.css">
+    <link rel="shortcut icon" type="image/png"  href="{{ url_for('static',filename='fevicon.png')}}" >
+
+
+</head>
+<body class="transbody">
+<center>
+    <form action="/translate" method="POST" style="padding-top: 200px;">
+            <button> <a href ="https://www.labnol.org/code/19899-google-translate-languages">
+                 see language codes </a></button>
+    	<input  type="text" name="from" class = 'qrinput' placeholder="Enter from Language code eg:'en' for  (English)" required="required" />
+        <input  type="text" name="to" class = 'qrinput' placeholder="Enter to Language code eg: 'ru' for (Russian)" required="required" />
+        <input  type="text" name="sentence" class = 'qrinput' placeholder="Enter Text Here" required="required" />
+
+        <button type="submit"  class="button"><span>Translate </span></button>
+
+    </form>
+
+</center>
+
+  <form action="/" method="GET" style="padding-top: 90px;">
+                  <input type="submit" value="Home" style=" background-color: Green;
+  border: none;
+  color: white;
+  padding: 13px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+  ">
+
+   </form>
+</body>
+</html>
+

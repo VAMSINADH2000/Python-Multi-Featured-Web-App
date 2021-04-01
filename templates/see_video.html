@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Youtube Downloader</title>
+        <link rel="stylesheet" href="/static/css/style.css">
+
+    <link rel="shortcut icon" type="image/png"  href="{{ url_for('static',filename='fevicon.png')}}" >
+
+</head>
+<body class="youtubesee">
+
+    <center>
+
+        <form action="{{url_for('see_video')}}" method="POST" style="padding-top: 180px;">
+            <h2 style="color:white;">{{url.title}}</h2> <br><br>
+            <div class="box">
+            <select name="itag" >
+                {% for i in url.streams %}
+                    <option value="{{i.itag}}"> {{i.mime_type}} {{ i.resolution}}</option>
+                {% endfor %}
+            </select>
+                </div>
+            <button type = 'submit' value="Download" class="button"><span> Download</span></button>
+
+        </form>
+
+    </center>
+
+</body>
+</html>
+
+

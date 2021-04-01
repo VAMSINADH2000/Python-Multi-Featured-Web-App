@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Translator</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="shortcut icon" type="image/png"  href="{{ url_for('static',filename='fevicon.png')}}" >
+
+</head>
+<body class="passbody">
+    <h1 class = 'strongpass'>Translted Text:</h1>
+<h1><div class = 'passh1'><center>{{text}}</center></div></h1>
+<form action="/" method="GET">
+    <input type="submit" value="Go Back" style=" background-color: Green;
+border: none;
+color: white;
+padding: 13px 30px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;">
+
+</form>
+</body>
+</html>

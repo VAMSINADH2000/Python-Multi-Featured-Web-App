@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="/static/css/home.css">
+    <link rel="shortcut icon" type="image/png"  href="{{ url_for('static',filename='fevicon.png')}}" >
+
+</head>
+<body>
+    <div class = 'options'>
+        <center  >
+
+                <form action="/qrcode" method="post">
+                    <input type="submit"  value="QrCode Generator" class="in" >
+  
+                </form>
+             <form action="/texttospeech" method="GET">
+                    <input type="submit"  value="Text to Speech" class="in">
+                </form>
+             <form action="/urlshortform" method="GET">
+                    <input type="submit"  value="Url Shortner" class="in" >
+                </form>
+
+            <form action="/taketext" method="GET">
+                    <input type="submit"  value="Translater" class="in">
+                </form>
+                                
+                <form action="/password" method="GET">
+                    <input type="submit"  value="Generate Strong Passord" class="in" >
+                </form>
+            <form action="/youtubedownload" method="GET">
+                    <input type="submit"  value="Youtube Downloader" class="in">
+                </form>
+        </center>
+        <center>
+</center>
+    </div>
+    </body>
+</html>
