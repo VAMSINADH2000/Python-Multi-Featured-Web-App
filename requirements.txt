@@ -27,11 +27,11 @@ pluggy==0.13.1
 pre-commit==2.11.1
 py==1.10.0
 pyparsing==2.4.7
+pypiwin32==223
 pyshorteners==1.0.1
 pyttsx3==2.90
 pytube==10.6.1
 pytz==2021.1
-pywin32==227
 PyYAML==5.4.1
 qrcode==6.1
 requests==2.25.1
